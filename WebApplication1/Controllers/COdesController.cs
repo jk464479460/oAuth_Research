@@ -7,7 +7,7 @@ namespace WebApplication1.Controllers
     public class COdesController : ApiController
     {
         [HttpGet]
-       [Authorize]
+       [Custom]
         [Route("api/Login")]
         public HttpResponseMessage Get(string code)
         {

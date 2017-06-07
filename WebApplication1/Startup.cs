@@ -30,7 +30,7 @@ namespace WebApplication1
                 AllowInsecureHttp = true,
                 //AuthenticationMode = AuthenticationMode.Active,
                 TokenEndpointPath = new PathString("/token"), //获取 access_token 授权服务请求地址
-                AccessTokenExpireTimeSpan = TimeSpan.FromDays(10), //access_token 过期时间
+                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(1), //access_token 过期时间
                 Provider = new SimpleAuthorizationServerProvider()
 
 
